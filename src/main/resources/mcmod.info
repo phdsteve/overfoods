@@ -1,0 +1,21 @@
+[
+{
+  "modid": "overfoods",
+  "name": "0V3R_F00D5",
+  "description": "A lightweight alternative to other food mods.",
+  "version": "1.7.10-Build1000",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "PhDSteve"
+  ],
+  "credits": "To food anywhere and everywhere",
+  "logoFile": "0V3R_F00D5\src\main\resources\assets\of\textures\logo\0V3R F00D5 Logo.png",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
