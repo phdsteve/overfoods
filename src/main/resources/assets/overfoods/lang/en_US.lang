@@ -1,1 +1,21 @@
 itemGroup.0V3R_F00D5=0V3R_F00D5
+
+item.Juicer.name=Juicer
+item.DrinkingGlass.name=Drinking Glass
+item.Blender.name=Blender
+item.CuttingBoard.name=Cutting Board
+item.RedSoloCup.name=Red Solo Cup
+
+item.SlicedPotatoes.name=Sliced Potatoes
+
+item.JuiceApple.name=Apple Juice
+item.JuiceMelon.name=Melon Juice
+item.JuiceCarrot.name=Carrot Juice
+item.RoastedPumpkinSeeds.name=Roasted Pumpkin Seeds
+item.SmoothieApple.name=Apple Smoothie
+item.SmoothieMelon.name=Melon Smoothie
+item.JuiceGoldenApple.name=Golden Apple Juice
+item.JuiceGoldenCarrot.name=Golden Carrot Juice
+item.FrenchFries.name=French Fries
+item.AppleCider.name=Apple Cider
+item.PurpleDrank.name=Purple Drank

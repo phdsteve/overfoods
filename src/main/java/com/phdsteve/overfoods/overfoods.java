@@ -1,5 +1,6 @@
 package com.phdsteve.overfoods;
 
+import com.phdsteve.overfoods.init.ItemRegistry;
 import com.phdsteve.overfoods.proxy.IProxy;
 import com.phdsteve.overfoods.reference.Reference;
 import com.phdsteve.overfoods.utility.LogHelper;
@@ -22,12 +23,14 @@ public class overfoods
     public void preInit(FMLPreInitializationEvent event)
     {
         LogHelper.info("Initializing 0V3R_F00D5...");
+        ItemRegistry.iRegistry();
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
-
+        ItemRegistry.icRegistry();
+        ItemRegistry.isRegistry();
     }
 
     @Mod.EventHandler

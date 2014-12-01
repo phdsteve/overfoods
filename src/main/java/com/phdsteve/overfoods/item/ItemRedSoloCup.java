@@ -1,6 +1,7 @@
 package com.phdsteve.overfoods.item;
 
 import com.phdsteve.overfoods.creativetab.CreativeTab;
+import com.phdsteve.overfoods.init.ItemRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumAction;

@@ -1,6 +1,6 @@
 package com.phdsteve.overfoods.creativetab;
 
-import com.phdsteve.overfoods.item.ItemRegistry;
+import com.phdsteve.overfoods.init.ItemRegistry;
 import com.phdsteve.overfoods.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;

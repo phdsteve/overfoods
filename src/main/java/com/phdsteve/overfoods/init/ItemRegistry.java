@@ -1,5 +1,6 @@
-package com.phdsteve.overfoods.item;
+package com.phdsteve.overfoods.init;
 
+import com.phdsteve.overfoods.item.*;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
