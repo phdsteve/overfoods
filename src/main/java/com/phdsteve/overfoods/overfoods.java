@@ -27,6 +27,7 @@ public class overfoods
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+
     }
 
     @Mod.EventHandler

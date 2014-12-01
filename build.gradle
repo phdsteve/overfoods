@@ -19,7 +19,7 @@ apply plugin: 'forge'
 
 version = "1.7.10-Build1000"
 group= "com.phdsteve.overfoods" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "0V3R_F00D5 "
+archivesBaseName = "0V3R_F00D5"
 
 minecraft {
     version = "1.7.10-10.13.2.1231"
