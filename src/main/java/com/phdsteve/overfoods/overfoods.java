@@ -1,5 +1,7 @@
 package com.phdsteve.overfoods;
 
+import com.phdsteve.overfoods.init.CraftingRecipes;
+import com.phdsteve.overfoods.init.FurnaceRecipes;
 import com.phdsteve.overfoods.init.ItemRegistry;
 import com.phdsteve.overfoods.proxy.IProxy;
 import com.phdsteve.overfoods.reference.Reference;
@@ -23,14 +25,14 @@ public class overfoods
     public void preInit(FMLPreInitializationEvent event)
     {
         LogHelper.info("Initializing 0V3R_F00D5...");
-        ItemRegistry.iRegistry();
+        ItemRegistry.init();
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
-        ItemRegistry.icRegistry();
-        ItemRegistry.isRegistry();
+        CraftingRecipes.init();
+        FurnaceRecipes.init();
     }
 
     @Mod.EventHandler
