@@ -7,13 +7,12 @@ import com.phdsteve.overfoods.creativetab.CreativeTab;
 
 public class FoodRoastedPumpkinSeeds extends ItemFood
 {
-	public FoodRoastedPumpkinSeeds(int i, int j, boolean b)
+	public FoodRoastedPumpkinSeeds(int i, boolean b)
 	{
-		super(j, b);
+		super(i, b);
 		this.setUnlocalizedName("RoastedPumpkinSeeds");
 		this.setTextureName("overfoods:RoastedPumpkinSeeds");
 		this.setMaxStackSize(64);
-		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(CreativeTab.OVERFOODS_TAB);
 	}
 }

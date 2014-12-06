@@ -12,14 +12,13 @@ import net.minecraft.world.World;
 public class ItemRedSoloCup extends ItemFood
 {
 
-	public ItemRedSoloCup(int i, int j, boolean b)
+	public ItemRedSoloCup(int i, boolean b)
 	{
-		super(j, b);
+		super(i, b);
 		this.setUnlocalizedName("RedSoloCup");
 	    this.setTextureName("overfoods:RedSoloCup");
 	    this.setMaxStackSize(1);
 	    this.setMaxDamage(0);
-	    this.setCreativeTab(CreativeTabs.tabAllSearch);
 	    this.setCreativeTab(CreativeTab.OVERFOODS_TAB);
 	}
 	

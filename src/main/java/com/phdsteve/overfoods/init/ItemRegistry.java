@@ -9,29 +9,72 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ItemRegistry
 {
-	// Tools (2001 - 2100)
-	public static Item Blender = new ItemBlender(2001);
-	public static Item CuttingBoard = new ItemCuttingBoard(2002);
-	public static Item DrinkingGlass = new ItemDrinkingGlass(2003);
-	public static Item Juicer = new ItemJuicer(2004);
-	public static Item RedSoloCup = new ItemRedSoloCup(2005, 0, false);
+	// Tools
+	public static Item Blender = new ItemBlender();
+	public static Item CuttingBoard = new ItemCuttingBoard();
+	public static Item DrinkingGlass = new ItemDrinkingGlass();
+	public static Item Juicer = new ItemJuicer();
+	public static Item RedSoloCup = new ItemRedSoloCup(0, false);
 	
-	// Food intermediates (2101 - 2300)
-    public static Item SlicedPotatoes = new ItemSlicedPotatoes(2101);
+	// Food intermediates
+    public static Item SlicedPotatoes = new FoodSlicedPotatoes(3, false);
     
-    // Foods (2301 and up)
- 	public static Item JuiceApple = new FoodJuiceApple(2301, 2, false);
-    public static Item JuiceCarrot = new FoodJuiceCarrot(2302, 2, false);
-    public static Item JuiceMelon = new FoodJuiceMelon(2303, 2, false);
-    public static Item RoastedPumpkinSeeds = new FoodRoastedPumpkinSeeds(2304, 2, false);
-    public static Item SmoothieApple = new FoodSmoothieApple(2305, 3, false);
-    public static Item SmoothieMelon = new FoodSmoothieMelon(2306, 3, false);
-    public static Item JuiceGoldenApple = new FoodJuiceGoldenApple(2307, 4, false);
-    public static Item JuiceGoldenCarrot = new FoodJuiceGoldenCarrot(2308, 4, false);
-    public static Item FrenchFries = new FoodFrenchFries(2309, 4, false);
-    public static Item AppleCider = new FoodAppleCider(2310, 4, false);
-    public static Item PurpleDrank = new FoodPurpleDrank(2311, 4, false);
-	
+    // Foods
+ 	public static Item JuiceApple = new FoodJuiceApple(2, false);
+    public static Item JuiceCarrot = new FoodJuiceCarrot(2, false);
+    public static Item JuiceMelon = new FoodJuiceMelon(2, false);
+    public static Item RoastedPumpkinSeeds = new FoodRoastedPumpkinSeeds(2, false);
+    public static Item SmoothieApple = new FoodSmoothieApple(3, false);
+    public static Item SmoothieMelon = new FoodSmoothieMelon(3, false);
+    public static Item JuiceGoldenApple = new FoodJuiceGoldenApple(4, false);
+    public static Item JuiceGoldenCarrot = new FoodJuiceGoldenCarrot(4, false);
+    public static Item FrenchFries = new FoodFrenchFries(4, false);
+    public static Item AppleCider = new FoodAppleCider(4, false);
+    public static Item PurpleDrank = new FoodPurpleDrank(4, false);
+
+	//TODO Add food item: Chopped beef (beef + cutting board)
+	//TODO Add food item: Hamburger patty (cooked chopped beef)
+	//TODO Add food item: Hamburger (bread slices + hamburger patty)
+	//TODO Add food item: Mini Blast Burger (Hamburger + fire charge, gives resistance)
+	//TODO Add food item: Blast Burger (Hamburger + TNT, regen 30 sec, instant TNT blast that only damages mobs)
+	//TODO Add food item: Cheeseburger (hamburger + cheese)
+	//TODO Add food item: Raw Bacon (raw porkchop + cutting board)
+	//TODO Add food item: Bacon (cooked raw bacon)
+	//TODO Add food item: Bacon Cheeseburger (cheeseburger + bacon)
+	//TODO Add food item: Slime Burger (slime ball + sliced bread, jump boost 15 sec)
+	//TODO Add food item: Carrot Cake
+	//TODO Add food item: Chocolate Cake
+	//TODO Add food item: Milk
+	//TODO Add food item: Chocolate Milk
+	//TODO Add food item: Cheese (Fermented spider eye, magma cream, milk bucket, returns bucket)
+	//TODO Add food item: Cheese sandvich (sliced bread + cheese)
+	//TODO Add food item: Grilled Cheese Sandwich (Cooked cheese sandwich)
+	//TODO Add food item: Sliced Bread (bread + cutting board, yields 8 slices)
+	//TODO Add food item: Flour (crafted wheat)
+	//TODO Add food item: Bread (flour smelted)
+	//TODO Add food item: Beef Stew (Steak in mushroom soup recipe)
+	//TODO Add food item: Pork Stew (Porkchop in mushroom soup recipe)
+	//TODO Add food item: Fish Stew (Cooked fish in mushroom soup recipe)
+	//TODO Add food item: Chicken Stew (Chicken in mushroom soup recipe)
+	//TODO Add food item: Porkchop Sandwich (bread slices + porkchop)
+	//TODO Add food item: Chicken Sandwich (bread slices + chicken)
+	//TODO Add food item: Fish Sandwich (bread slices + cooked fish)
+	//TODO Add food item: Steak Sandwich (bread slices + steak)
+	//TODO Add food item: Mystery Meatloaf (any 3 foods + rotten flesh, regen 30 sec, nausea 10 sec, always edible)
+	//TODO Add food item: Mashed Potatoes (baked potato + blender, strength + slowness 10 sec)
+	//TODO Add food item: Special Cookie (grass + cookie, jump boost + slowness 20 sec)
+	//TODO Add food item: Energy Drink (5 cocoa + redstone + glowstone + blender + milk, high speed boost 30 sec, slowness 15 sec following)
+	//TODO Add food item: Apple Pie (pumpkin pie recipe, sub apple)
+	//TODO Add food item: Chocolate pie (pumpkin pie recipe, sub cocoa)
+	//TODO Add food item: Mrs. Lovett's Meat Pie (pumpkin pie recipe, sub rotten flesh)
+	//TODO Add food item: Milkshake (milk + snowball + blender)
+	//TODO Add food item: Chocolate Milkshake (Milkshake + Cocoa + blender)
+	//TODO Add food item: Pumpkin Milkshake (Milkshake + pumpkin + blender)
+
+	//TODO Add something to do with rotten potatoes
+	//TODO Add something to do with rotten flesh
+	//TODO Craft blender with dye to color blender
+
 	// Item registry
 	public static void iRegistry()
 	{
@@ -91,7 +134,8 @@ public class ItemRegistry
     	GameRegistry.addRecipe(new ItemStack(ItemRegistry.Juicer), "s", "p", 's', stoneStack, 'p', stonePlateStack);
     	GameRegistry.addRecipe(new ItemStack(ItemRegistry.DrinkingGlass, 2), "p p", "p p", "ggg", 'g', glassStack , 'p', glassPaneStack);
     	GameRegistry.addRecipe(new ItemStack(ItemRegistry.CuttingBoard), "i  ", " s ", "  w", 'i', ironIngotStack, 's', stickStack, 'w', woodPlankStack);
-    	GameRegistry.addRecipe(new ItemStack(ItemRegistry.Blender), "s", "g", "i", 's', stickStack, 'g', glassStack, 'i', ironIngotStack);
+    	//TODO Change blender recipe to Glass block, shears, Iron block in vertical stack
+		GameRegistry.addRecipe(new ItemStack(ItemRegistry.Blender), "s", "g", "i", 's', stickStack, 'g', glassStack, 'i', ironIngotStack);
 //    	GameRegistry.addShapelessRecipe(new ItemStack(ItemRegistry.RedSoloCup),  drinkingGlassStack, redDyeStack);
 
     	// Food intermediates

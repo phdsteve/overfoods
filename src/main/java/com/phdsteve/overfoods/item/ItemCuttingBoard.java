@@ -6,12 +6,11 @@ import net.minecraft.item.Item;
 
 public class ItemCuttingBoard extends Item
 {
-	public ItemCuttingBoard(int i)
+	public ItemCuttingBoard()
 	{
 		this.setUnlocalizedName("CuttingBoard");
         this.setTextureName("overfoods:CuttingBoard");
         this.setMaxStackSize(8);
-        this.setCreativeTab(CreativeTabs.tabAllSearch);
         this.setCreativeTab(CreativeTab.OVERFOODS_TAB);
 	}
 }

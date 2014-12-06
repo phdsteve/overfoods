@@ -10,13 +10,12 @@ import com.phdsteve.overfoods.creativetab.CreativeTab;
 
 public class FoodJuiceGoldenCarrot extends ItemFood
 {
-	public FoodJuiceGoldenCarrot(int i, int j, boolean b)
+	public FoodJuiceGoldenCarrot(int i, boolean b)
 	{
-		super(j, b);
+		super(i, b);
 		this.setUnlocalizedName("JuiceGoldenCarrot");
 		this.setTextureName("overfoods:JuiceGoldenCarrot");
 		this.setMaxStackSize(1);
-		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(CreativeTab.OVERFOODS_TAB);
 		// TODO Add potion effects: same as golden apple
 	}

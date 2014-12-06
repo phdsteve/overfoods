@@ -9,13 +9,12 @@ import net.minecraft.item.ItemStack;
 
 public class FoodPurpleDrank extends ItemFood
 {
-	public FoodPurpleDrank(int i, int j, boolean b)
+	public FoodPurpleDrank(int i, boolean b)
 	{
-		super(j, b);
+		super(i, b);
 		this.setUnlocalizedName("PurpleDrank");
 		this.setTextureName("overfoods:PurpleDrank");
 		this.setMaxStackSize(1);
-		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(CreativeTab.OVERFOODS_TAB);
 		// TODO Add potion effect: 10 seconds speed ii, 5 seconds darkness
 	}

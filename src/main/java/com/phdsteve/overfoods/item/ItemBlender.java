@@ -7,12 +7,11 @@ import net.minecraft.item.Item;
 
 public class ItemBlender extends Item
 {
-	public ItemBlender(int i)
+	public ItemBlender()
 	{
 		this.setUnlocalizedName("Blender");
         this.setTextureName("overfoods:Blender");
         this.setMaxStackSize(1);
-        this.setCreativeTab(CreativeTabs.tabAllSearch);
         this.setCreativeTab(CreativeTab.OVERFOODS_TAB);
 	}
 }

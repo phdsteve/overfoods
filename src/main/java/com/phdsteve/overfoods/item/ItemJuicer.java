@@ -8,12 +8,11 @@ import com.phdsteve.overfoods.creativetab.CreativeTab;
 
 public class ItemJuicer extends Item
 {
-    public ItemJuicer(int i)
+    public ItemJuicer()
     {
     	this.setUnlocalizedName("Juicer");
         this.setTextureName("overfoods:Juicer");
         this.setMaxStackSize(1);
-        this.setCreativeTab(CreativeTabs.tabAllSearch);
         this.setCreativeTab(CreativeTab.OVERFOODS_TAB);
         this.setContainerItem(Items.bucket);
     }

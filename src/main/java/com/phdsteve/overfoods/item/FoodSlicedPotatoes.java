@@ -2,16 +2,16 @@ package com.phdsteve.overfoods.item;
 
 import com.phdsteve.overfoods.creativetab.CreativeTab;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
 
-public class ItemSlicedPotatoes extends Item
+public class FoodSlicedPotatoes extends ItemFood
 {
-	public ItemSlicedPotatoes(int i)
+	public FoodSlicedPotatoes(int i, boolean b)
 	{
+        super(i, b);
 		this.setUnlocalizedName("SlicedPotatoes");
         this.setTextureName("overfoods:SlicedPotatoes");
         this.setMaxStackSize(64);
-        this.setCreativeTab(CreativeTabs.tabAllSearch);
         this.setCreativeTab(CreativeTab.OVERFOODS_TAB);
 	}
 }

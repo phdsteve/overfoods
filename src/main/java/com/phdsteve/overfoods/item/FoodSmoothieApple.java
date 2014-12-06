@@ -9,13 +9,12 @@ import net.minecraft.item.ItemStack;
 
 public class FoodSmoothieApple extends ItemFood
 {
-	public FoodSmoothieApple(int i, int j, boolean b)
+	public FoodSmoothieApple(int i, boolean b)
 	{
-		super(j, b);
+		super(i, b);
 		this.setUnlocalizedName("SmoothieApple");
 		this.setTextureName("overfoods:SmoothieApple");
 		this.setMaxStackSize(1);
-		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(CreativeTab.OVERFOODS_TAB);
 	}
 	

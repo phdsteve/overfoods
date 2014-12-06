@@ -6,13 +6,12 @@ import net.minecraft.item.ItemFood;
 
 public class FoodFrenchFries extends ItemFood
 {
-	public FoodFrenchFries(int i, int j, boolean b)
+	public FoodFrenchFries(int i, boolean b)
 	{
-		super(j, b);
+		super(i, b);
 		this.setUnlocalizedName("FrenchFries");
 		this.setTextureName("overfoods:FrenchFries");
 		this.setMaxStackSize(64);
-		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(CreativeTab.OVERFOODS_TAB);
 	}
 }

@@ -10,13 +10,12 @@ import com.phdsteve.overfoods.creativetab.CreativeTab;
 
 public class FoodJuiceApple extends ItemFood
 {
-	public FoodJuiceApple(int i, int j, boolean b)
+	public FoodJuiceApple(int i, boolean b)
 	{
-		super(j, b);
+		super(i, b);
 		this.setUnlocalizedName("JuiceApple");
 		this.setTextureName("overfoods:JuiceApple");
 		this.setMaxStackSize(1);
-		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(CreativeTab.OVERFOODS_TAB);
 	}
 	

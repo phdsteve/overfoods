@@ -10,13 +10,12 @@ import com.phdsteve.overfoods.creativetab.CreativeTab;
 
 public class FoodAppleCider extends ItemFood
 {
-	public FoodAppleCider(int i, int j, boolean b)
+	public FoodAppleCider(int i, boolean b)
 	{
-		super(j, b);
+		super(i, b);
 		this.setUnlocalizedName("AppleCider");
 		this.setTextureName("overfoods:AppleCider");
 		this.setMaxStackSize(1);
-		this.setCreativeTab(CreativeTabs.tabAllSearch);
 		this.setCreativeTab(CreativeTab.OVERFOODS_TAB);
 	}
 	
